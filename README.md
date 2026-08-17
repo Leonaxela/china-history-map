@@ -6,6 +6,10 @@
 - **清朝**：1820 年省级 / 府级边界、湖泊、河流
 - **其他朝代**：示意轮廓（按现代省份组合近似）+ 都城搜索，数据后续逐步补充
 
+## 预览
+
+![华夏舆图界面预览](docs/demo.png)
+
 ## 运行
 
 ```bash
@@ -27,14 +31,18 @@ npm run data       # 重新执行数据转换脚本（data/raw -> public/data）
 ## 目录结构
 
 ```
-public/data/                  # 前端加载的数据（由 data/scripts 生成）
-  ming-prefectures.geojson    # 明朝府级边界（时间序列过滤 1368–1644）
-  ming-county-points.geojson  # 明朝县级点位
-  ming-places.json            # 明朝搜索索引（府/州/县/两京）
-  territories.json            # 历代 30 个断面：疆域轮廓 + 都城 + 简介
-  mountains.geojson           # 山脉示例数据（约 25 条主要山脉）
-  qing1820/                   # 清 1820 年快照：省/府/湖泊/河流
-  modern-china.geojson        # 现代省界（用于历代轮廓拼合）
+docs/
+  demo.png                   # 界面演示截图
+public/
+  favicon.svg                # 站点图标（古风印章「舆」）
+  data/                      # 前端加载的数据（由 data/scripts 生成）
+    ming-prefectures.geojson # 明朝府级边界（时间序列过滤 1368–1644）
+    ming-county-points.geojson  # 明朝县级点位
+    ming-places.json         # 明朝搜索索引（府/州/县/两京）
+    territories.json         # 历代 30 个断面：疆域轮廓 + 都城 + 简介
+    mountains.geojson        # 山脉示例数据（约 25 条主要山脉）
+    qing1820/                # 清 1820 年快照：省/府/湖泊/河流
+    modern-china.geojson     # 现代省界（用于历代轮廓拼合）
 data/
   raw/                        # 原始下载数据（不入 git）
   scripts/
