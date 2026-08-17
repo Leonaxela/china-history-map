@@ -1,0 +1,35 @@
+# ---- 依赖与构建 ----
+node_modules/
+dist/
+
+# ---- 原始数据（可重新下载，不入库；转换产物在 public/data/） ----
+data/raw/
+
+# ---- 工具会话记录 ----
+.reasonix/
+
+# ---- 编辑器 / IDE ----
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---- 环境与本地配置 ----
+.env
+.env.*
+*.local
+
+# ---- 日志 ----
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
